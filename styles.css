@@ -95,24 +95,16 @@ transition: color 0.01s ease;
   min-height: 100vh;
 }
 
-.project-header h2 {
-  
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom:3rem;
-}
-
 .project-card {
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  gap: 2rem;
   background-color: #ffffff51;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  margin: auto;
+  margin: 1rem auto;
   max-width: 900px;
   overflow: hidden;
   flex-wrap: wrap;
@@ -127,23 +119,22 @@ transition: color 0.01s ease;
   width: 80%;
   max-width: 300px;
   border-radius: 10px;
-  object-fit: cover;
+   object-fit: cover; 
 }
 
 .project-info {
   flex: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .project-title {
-  padding: 1.3rem;
+  padding: 1rem;
   font-size: 1.8em;
   color: #ffd500;
 }
 
 .project-description {
-  line-height:1.6;
-  padding: 1.3rem;
+  padding: 1rem;
   font-size: 1.3em;
   color: #020101;
 }
@@ -151,19 +142,6 @@ transition: color 0.01s ease;
 .project-card a{
   display: flex;
   text-decoration: none;
-}
-
-
-.button {
-  background-color: #4a90e2;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-.button:hover {
-  background-color: #357abd;
-  transform: translateY(-2px); 
 }
 
 .contact{
@@ -217,9 +195,38 @@ transition: color 0.01s ease;
       color: rgba(230, 83, 83, 0.7);
 }
 
-
 /* For mobile devices responsiveness*/
 @media (max-width: 768px) {
+.project-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  flex: 1;
+  text-align: center;
+}
+
+.project-title {
+  padding: 1rem;
+  font-size: 1.8em;
+  color: #ffd500;
+}
+
+.project-description {
+  padding: 1rem;
+  font-size: 1.1em;
+  color: #020101;
+}
+
+.project-card a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 
   #navbar {
     justify-content: center;
@@ -245,30 +252,32 @@ transition: color 0.01s ease;
   .project-card {
     flex-direction: column; /* Stack image and text vertically */
     align-items: center;
-    text-align: center;
     max-width: 100%;
     margin: 1rem auto;
     padding: 1rem;
   }
 
   .project-image {
-    width: 50%;
-    max-width: 250px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
     margin-bottom: 1rem;
-  }
 
-  .project-info {
-    padding: 0;
   }
 
   .project-title {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
     font-size: 1.4rem;
   }
 
   .project-description {
     font-size: 1rem;
     line-height: 1.4;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
   }
 
 #profile-link, .contact-btn {
